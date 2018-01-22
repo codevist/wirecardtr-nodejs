@@ -42,7 +42,7 @@ function ProApi(request) {
                 Country : "",
                 Currency : "",
                 Extra : "",
-                TurkcellServiceId:20923735,
+                TurkcellServiceId:0,
             }          
         })
 

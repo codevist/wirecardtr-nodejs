@@ -35,7 +35,7 @@ function ApiPlus(request) {
                 OnErrorSMS:"basarisiz odeme",
                 RequestGsmOperator:0,
                 RequestGsmType:0,
-                TurkcellServiceId:20923735,
+                TurkcellServiceId:0,
                 CustomerIpAddress:"127.0.0.1"
             }          
         })
