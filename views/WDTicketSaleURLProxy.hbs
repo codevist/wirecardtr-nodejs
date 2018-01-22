@@ -1,0 +1,60 @@
+    {{> head}}
+
+<h2>SaleURLProxy</h2>
+<fieldset>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Ürün Adı
+                </th>
+                <th>
+                    İşlem İçeriği
+                </th>
+
+                <th>
+                    İşlem Tutarı
+                </th>
+                <th>
+                    İşlem Tipi
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Bilgisayar
+                </td>
+                <td>
+                    BLGSYR01
+                </td>
+                <td>
+                    0,01 TL
+                </td>
+                <td>
+                    1 //Tek Çekim
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <label class="col-md-12 control-label" for=""></label>
+        <div class="col-md-4">
+            <br />
+            <button type="submit" id="btnSubmit" name="pay" class="btn btn-danger">3D Olmadan Ödeme Yap</button>
+    
+        </div>
+
+        <div class="row">
+<div class="col-md-12">
+    <br>
+       <pre id="result">
+
+        </pre>
+</div>
+</div>
+</fieldset>
+
+  <script src="/js/WDTicketSaleURLProxy.js"></script>
+  {{> footer}}

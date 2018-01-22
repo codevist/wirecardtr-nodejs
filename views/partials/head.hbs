@@ -1,0 +1,78 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<title>WireCard Developer Portal - {{pageName}}</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <!-- Our Custom CSS -->
+    <link href="/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="~/favicon.ico">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="/css/main.min.css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a href="/"><img src="/image/logo.png" width="130" height="26" /></a>
+                
+            </div>
+            <ul class="list-unstyled components">
+            <li>
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Sms Ödeme Servisleri</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li><a href="/">Basic Api </a></li>
+                <li><a href="/ProApi">Pro Api</a></li>
+                <li><a href="/ApiPlus">Api Plus</a></li>
+                <li><a href="/SendInformationSmsService">Bilgi Sms Gönderim Servisi</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Abonelik Servisleri</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li><a href="/SelectSubscriber">Abonelik Listeleme</a></li>
+                <li><a href="/SelectSubscriberDetail">Abonelik Detay</a></li>
+                <li><a href="/DeactivateSubscriber">Abone Sil</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/CCProxySale">Ödeme Formu</a>
+            
+        </li>
+        <li>
+            <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false">Ortak Ödeme Formu</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu2">
+                <li><a href="WDTicketSale3DURLProxy">3D Secure İle ödeme</a></li>
+                <li><a href="WDTicketSaleURLProxy">3D Secure Olmadan Ödeme</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false">Mağaza Servisleri</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu3">
+                <li><a href="/MarketPlaceAddSubPartner">Mağaza Oluştur</a></li>
+                <li><a href="/MarketPlaceUpdateSubPartner">Mağaza Güncelle</a></li>
+                <li><a href="/MarketPlaceDeactiveSubPartner">Mağaza Sil</a></li>
+                <li><a href="/MarketPlaceSale3DSec">3D Secure ile Ödeme </a></li>
+                <li><a href="/MarketPlaceMPSale">3D Secure olmadan Ödeme </a></li>
+                <li><a href="/MarketPlaceReleasePayment">Ödeme Onay Servisi </a></li>
+            </ul>
+        </li>
+            </ul>  
+        </nav>
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>

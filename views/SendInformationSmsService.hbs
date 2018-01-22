@@ -1,0 +1,33 @@
+
+    {{> head}}
+
+
+<h2>Bilgi Sms'i Gönderim Servisi</h2>
+<hr/>
+
+    <div class="row">
+        <label class="col-md-12 control-label" for="">SMS Gönderilecek Telefon Numarası:</label>
+        <div class="col-md-2">
+            <input name="gsm" type="text" id="txtPhoneNumber"  class="form-control" placeholder="5XXXXXXXXX" required="">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <label class="col-md-12 control-label" for="">SMS Metni (Türkçe karakter kullanılmamalı)</label>
+        <div class="col-md-2">
+            <textarea name="content" rows="8" cols="60"   required=""></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-md-12 control-label" for=""></label>
+        <div class="col-md-4">
+            <br />
+            <button type="submit" id="btnSubmit" name="" class="btn btn-danger">Bilgi Sms'i Gönder</button>
+        </div>
+    </div>
+      <pre id="result">
+
+            </pre>
+      <script src="/js/SendInformationSmsService.js"></script>
+
+    {{> footer}}

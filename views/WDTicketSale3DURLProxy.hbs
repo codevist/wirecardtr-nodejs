@@ -1,0 +1,61 @@
+    {{> head}}
+
+    <h2>Ortak Ödeme Formu 3D İle Ödeme</h2>
+<div class="form-horizontal">
+<fieldset>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Ürün Adı
+                    </th>
+                    <th>
+                        İşlem İçeriği
+                    </th>
+    
+                    <th>
+                        İşlem Tutarı
+                    </th>
+                    <th>
+                        İşlem Tipi
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Bilgisayar
+                    </td>
+                    <td>
+                        BLGSYR01
+                    </td>
+                    <td>
+                        0,01 TL
+                    </td>
+                    <td>
+                        1 //Tek Çekim
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+<div class="row">
+    <label class="col-md-12 control-label" for=""></label>
+    <div class="col-md-4">
+        <br />
+        <button type="submit" id="btnSubmit" name="pay" class="btn btn-danger">3D ile Ödeme Yap</button>
+
+    </div>
+</div>
+<div class="row">
+<div class="col-md-12">
+       <pre id="result">
+
+        </pre>
+</div>
+</div>
+</div>
+
+    <script src="/js/WDTicketSale3DURLProxy.js"></script>
+    {{> footer}}
