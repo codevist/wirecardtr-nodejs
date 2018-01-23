@@ -4,6 +4,13 @@ const helpers = require("../helpers/index");
 const Guid = require("guid");
 const soap = require('soap');
 
+/**
+ * Abonelik iptal etme soap çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * subscriberId değerine public/js/DeactivateSubscriber.js içerisinden ulaşabilirsiniz.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * response mesajı xml formatında ekranda gösterilmektedir.
+ */
 function DeactivateSubscriber(subscriberId) {
     return new Promise((resolve, reject) => {
         if (!subscriberId) return reject({

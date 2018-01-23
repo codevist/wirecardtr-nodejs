@@ -5,6 +5,14 @@ const Guid = require("guid");
 const soap = require('soap');
 var js2xmlparser = require("js2xmlparser");
 
+/**
+ * Pazaryeri 3D secure olmadan ödeme xml servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * request alanlarına public/js/MarketPlaceMpSale.js içerisinden ulaşabilirsiniz.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * Response mesajı xml formatında ekranda gösterilmektedir. 
+ * @param {*} request 
+ */
 function MarketPlaceMpSale(request) {
     return new Promise((resolve, reject) => {
 

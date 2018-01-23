@@ -5,6 +5,14 @@ const Guid = require("guid");
 const soap = require('soap');
 var js2xmlparser = require("js2xmlparser");
 
+/**
+ *Ortak Ödeme Formu 3D Secure ile ödeme xml servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * request alanlarına public/js/WDTicketSale3DURLProxy.js içerisinden ulaşabilirsiniz.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * Response mesajı xml formatında ekranda gösterilmektedir. 
+ * @param {*} request 
+ */
 function WDTicketSale3DURLProxy(request) {
     return new Promise((resolve, reject) => {
 

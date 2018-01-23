@@ -1,6 +1,6 @@
 const settings = {
-    userCode : process.env.WIRECARD_USER_CODE || "",
-    pin : process.env.WIRECARD_PIN || "",
+    userCode : process.env.WIRECARD_USER_CODE || "20923",
+    pin : process.env.WIRECARD_PIN || "535D7D1B5DA6407EB7F6",
     baseURL : process.env.WIRECARD_BASE_URL || "https://www.wirecard.com.tr/SGate/Gate",
 }
 

@@ -4,6 +4,16 @@ const helpers = require("../helpers/index");
 const Guid = require("guid");
 const soap = require('soap');
 var dateFormat = require('dateformat');
+
+
+/**
+ * Abonelik listeleme soap servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * request alanlarına public/js/SelectSubscriber.js içerisinden ulaşabilirsiniz.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * Response mesajı xml formatında ekranda gösterilmektedir.
+ * @param {*} request 
+ */
 function SelectSubscriber(request) {
     return new Promise((resolve, reject) => {
 

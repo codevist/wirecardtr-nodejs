@@ -5,6 +5,14 @@ const Guid = require("guid");
 const soap = require('soap');
 var js2xmlparser = require("js2xmlparser");
 
+/**
+ * Pazaryeri ödeme onay xml servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * request alanlarına public/js/MarketPlaceReleasePayment.js içerisinden ulaşabilirsiniz.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * Respnse mesajı xml formatında ekranda gösterilmektedir. 
+ * @param {*} request 
+ */
 function MarketPlaceReleasePayment(request) {
     return new Promise((resolve, reject) => {
         var obj={

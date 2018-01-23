@@ -4,6 +4,15 @@ const helpers = require("../helpers/index");
 const Guid = require("guid");
 const soap = require('soap');
 
+/**
+ * api plus soap servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * request alanlarına public/js/ApiPlus.js içerisinden ulaşabilirsiniz.
+ * form içerisinden gönderilen veriler data ilgili alanlar doldurularak soap çağrısı başlatılır.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * response cevabı xml formatında ekranda gösterilir.
+ * @param {*} request 
+ */
 function ApiPlus(request) {
     return new Promise((resolve, reject) => {
         if (!request.Gsm) return reject({

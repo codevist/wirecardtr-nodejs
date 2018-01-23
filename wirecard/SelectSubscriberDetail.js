@@ -4,7 +4,14 @@ const helpers = require("../helpers/index");
 const Guid = require("guid");
 const soap = require('soap');
 
-
+/**
+ * Abone Detay soap servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * request alanlarına public/js/SelectSubscriberDetail.js içerisinden ulaşabilirsiniz.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * Response mesajı xml formatında ekranda gösterilmektedir.
+ * @param {*} request 
+ */
 function SelectSubscriberDetail(subscriberId) {
     return new Promise((resolve, reject) => {
         if (!subscriberId) return reject({

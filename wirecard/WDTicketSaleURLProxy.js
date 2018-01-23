@@ -5,6 +5,14 @@ const Guid = require("guid");
 const soap = require('soap');
 var js2xmlparser = require("js2xmlparser");
 
+/**
+ *Ortak Ödeme Formu 3D Secure olmadan ödeme xml servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
+ * request alanlarına public/js/WDTicketSaleURLProxy.js içerisinden ulaşabilirsiniz.
+ * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
+ * Response mesajı xml formatında ekranda gösterilmektedir.
+ * @param {*} request 
+ */
 function WDTicketSaleURLProxy(request) {
     return new Promise((resolve, reject) => {
 
@@ -25,7 +33,6 @@ function WDTicketSaleURLProxy(request) {
         }
 
         var xml_body = js2xmlparser.parse("WIRECARD", obj);
-	
         axios({
             url: settings.baseURL,
             method: 'POST',
