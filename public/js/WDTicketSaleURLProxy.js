@@ -2,14 +2,16 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
 
     var target = e.currentTarget;
     target.disabled = true;
+    
 
     var ajax = new XMLHttpRequest();
     ajax.open("POST", "/api/WDTicketSaleURLProxy", true);
     ajax.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');  
     ajax.onload = function () {
         target.disabled = false
-        console.log(ajax.response);
-        document.getElementById("result").innerText =  vkbeautify.xml(ajax.response)
+         document.getElementById("result").innerText =  vkbeautify.xml(ajax.response)  
+        //  document.getElementById("link").innerHTML = (JSON.parse(ajax.response)).Result.RedirectUrl 
+    
     }
 
     ajax.send(JSON.stringify({
@@ -23,4 +25,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         PaymentContent:"Bilgisayar",
         Description:"BLGSYR01"
     }))
+
+   
+    
 })

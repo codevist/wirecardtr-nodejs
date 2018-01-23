@@ -25,13 +25,13 @@ function WDTicketSaleURLProxy(request) {
         }
 
         var xml_body = js2xmlparser.parse("WIRECARD", obj);
-		console.log(xml_body);	
+	
         axios({
             url: settings.baseURL,
             method: 'POST',
             data: xml_body
         }).then(result => {
-            console.log(result.data);
+           
             resolve(result.data)
         }).catch(err => {
             reject(err)

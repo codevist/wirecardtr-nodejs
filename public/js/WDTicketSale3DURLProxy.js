@@ -13,6 +13,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         target.disabled = false
         console.log(ajax.response); 
         document.getElementById("result").innerText =  vkbeautify.xml(ajax.response)
+        //
     }
 
     ajax.send(JSON.stringify({
