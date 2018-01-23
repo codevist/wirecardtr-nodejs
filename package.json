@@ -8,18 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turkishdeveloper/ipara-nodejs.git"
+    "url": "git+https://github.com/WirecardTR/wirecardtr-nodejs"
   },
   "keywords": [
-    "ipara",
+    "wirecard",
     "nodejs"
   ],
-  "author": "Muhammed Furkan Aydın <furkanaydin@turkdeveloper.com>",
+  "author": "Coşkun Kurtuldu <coskun.kurtuldu@codevist.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/turkishdeveloper/ipara-nodejs/issues"
-  },
-  "homepage": "https://github.com/turkishdeveloper/ipara-nodejs#readme",
+ 
+  "homepage": "https://github.com/WirecardTR/wirecardtr-nodejs#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.18.1",
