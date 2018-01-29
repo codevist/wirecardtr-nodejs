@@ -31,8 +31,11 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CreditCardInfoExpireYear:expireYear,
         CreditCardInfoExpireMonth:expireMonth,
         CreditCardInfoCvv:cvv,
-        CreditCardInfoPrice:1,//0,01 TL
-        Mpay:"",
+        CardTokenizationRequestType:0,
+        CardTokenizationCustomerId:"1",
+        CardTokenizationValidityPeriod:0,
+        Price:1,//0,01 TL,
+        Mpay:"01",
         ExtraParam:"",
         Description:"Bilgisayar",
         IPAddress:"127.0.0.1",
@@ -40,7 +43,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         ErrorURL:"http://localhost:3000//Fail",
         SuccessURL:"http://localhost:3000//Success",
         InstallmentCount:installmentCount,
-        CommissionRate:100, //%1
+        CommissionRate:1, //%1
         SubPartnerId:subPartnerId, 
         PaymentContent:"BLGSYR01"
     }))

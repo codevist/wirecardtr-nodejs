@@ -28,9 +28,15 @@ function MarketPlaceMpSale(request) {
                 "OwnerName": request.CreditCardInfoOwnerName,
                 "ExpireYear": request.CreditCardInfoExpireYear,
                 "ExpireMonth": request.CreditCardInfoExpireMonth,
-                "Cvv": request.CreditCardInfoCvv,
-                "Price": request.CreditCardInfoPrice,
+                "Cvv": request.CreditCardInfoCvv
             },
+            "CardTokenization": {
+                "RequestType": request.CardTokenizationRequestType,
+                "CustomerId": request.CardTokenizationCustomerId,
+                "ValidityPeriod": request.CardTokenizationValidityPeriod,
+                "CCTokenId": Guid.raw(),
+            },
+            "Price": request.Price,
             "MPAY": request.Mpay,
             "ExtraParam": request.ExtraParam,
             "Description":request.Description,
