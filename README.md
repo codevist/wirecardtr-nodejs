@@ -19,6 +19,13 @@ Servislerimiz XML tabanlı olarak iki farklı yapıda çalışmaktadır;
 
 Temelde birbirinden çok fazla farkı olmayan bu iki yapıda, SOAP yapısının, managed dillerde (.Net, JAVA vs.) servisi direkt referans ekleyerek ve entityleri yazmadan kullanabilmek gibi bir artısı vardır.
 
+## Önemli Notlar
+
+* Wirecard ile ilgili tüm fonksiyonlar ./wirecard/index.js dosyasındadır. Sadece index.js dosyasını alarak tüm fonksiyonlara ulaşabilirsiniz.
+* Helpers fonksiyonlarının tümü ./helpers/index.js dosyasındadır. Sadece index.js dosyasını çekerek tüm fonksiyonlara ulaşabilirsiniz.
+* Router klasöründen api.js dosyasında örnek servis çağrılarına ulaşabilirsiniz.
+* Servisleri kullanabilmek için Wirecard başvurusunu tamamlamış olmanız gerekmektedir. Başvuru adımını tamamladıktan sonra UserCode, Pin ve TurkcellServiceId bilgileri sizlerle paylaşılacaktır.
+* Projeyi doğru şekilde çalıştırmak için, sizlere Wirecard üyeliğiniz aşamasında verilmiş olan UserCode ve Pin bilginizi projenin ".\settings.js" dosyasında eklediğinizden emin olunuz.
 
 ## Test ve Canlıya Geçiş Süreçleri, Dikkat Edilmesi Gereken Noktalar
 * Wirecard sisteminde yapılan tüm işlemlerin süresi maksimum 5 dakikadır. Bu sürede tamamlanmayan işlemler iptal edilir.
