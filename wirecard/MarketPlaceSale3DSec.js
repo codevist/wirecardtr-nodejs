@@ -31,6 +31,12 @@ function MarketPlaceSale3DSec(request) {
                 "Cvv": request.CreditCardInfoCvv,
                 "Price": request.CreditCardInfoPrice,
             },
+            "CardTokenization": {
+                "RequestType": request.CardTokenizationRequestType,
+                "CustomerId": request.CardTokenizationCustomerId,
+                "ValidityPeriod": request.CardTokenizationValidityPeriod,
+                "CCTokenId": Guid.raw(),
+            },
             "MPAY": request.Mpay,
             "ExtraParam": request.ExtraParam,
             "Description":request.Description,

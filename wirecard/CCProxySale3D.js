@@ -6,14 +6,14 @@ const soap = require('soap');
 var js2xmlparser = require("js2xmlparser");
 
 /**
- * Kredi kartı ile Ödeme formu xml servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Kredi kartı 3D Secure Ödeme formu xml servis çağrısının yapıldığı metodu temsil etmektedir.
  * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
- * request alanlarına public/js/CCProxySale.js içerisinden ulaşabilirsiniz.
+ * request alanlarına public/js/CCProxySale3D.js içerisinden ulaşabilirsiniz.
  * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
  * Response mesajı xml formatında ekranda gösterilmektedir.
  * @param {*} request 
  */
-function CCProxySale(request) {
+function CCProxySale3D(request) {
     return new Promise((resolve, reject) => {
 
         var obj={
@@ -37,8 +37,10 @@ function CCProxySale(request) {
                 "ValidityPeriod": request.CardTokenizationValidityPeriod,
                 "CCTokenId": Guid.raw(),
             },
-            "Port": request.Port,
             "MPAY": request.MPAY,
+            "Port": request.Port,
+            "ErrorURL": request.ErrorURL,
+            "SuccessURL": request.SuccessURL,
             "ExtraParam": request.ExtraParam,
             "Description":request.Description,
             "IPAddress": request.IPAddress,
@@ -61,4 +63,4 @@ function CCProxySale(request) {
 		
 	})
 }
-module.exports = CCProxySale;
+module.exports = CCProxySale3D;

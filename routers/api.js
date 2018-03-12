@@ -115,6 +115,14 @@ exports.api
         console.log(err)
     })
 })
+.post("/CCProxySale3D", (req, res) => {
+    console.log(req);
+       wirecard.CCProxySale3D(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
 .post("/WDTicketSale3DURLProxy", (req, res) => {
     console.log(req);
        wirecard.WDTicketSale3DURLProxy(req.body).then(requestResult => {
@@ -126,6 +134,22 @@ exports.api
 .post("/WDTicketSaleURLProxy", (req, res) => {
     console.log(req);
        wirecard.WDTicketSaleURLProxy(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
+.post("/TransactionQueryByOrderId", (req, res) => {
+    console.log(req);
+       wirecard.TransactionQueryByOrderId(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
+.post("/TransactionQueryByMPAY", (req, res) => {
+    console.log(req);
+       wirecard.TransactionQueryByMPAY(req.body).then(requestResult => {
         res.json(requestResult)
     }).catch(err => {
         console.log(err)

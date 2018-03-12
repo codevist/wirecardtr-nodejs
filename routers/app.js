@@ -53,6 +53,11 @@ exports.app
     
     })
 })
+.get("/CCProxySale3D", (req, res)=>{
+    res.render("CCProxySale3D", {
+    
+    })
+})
 .get("/MarketPlaceAddSubPartner", (req, res)=>{
     res.render("MarketPlaceAddSubPartner", {
     
@@ -85,6 +90,16 @@ exports.app
 })
 .get("/WDTicketSaleURLProxy", (req, res)=>{
     res.render("WDTicketSaleURLProxy", {
+    
+    })
+})
+.get("/TransactionQueryByOrderId", (req, res)=>{
+    res.render("TransactionQueryByOrderId", {
+    
+    })
+})
+.get("/TransactionQueryByMPAY", (req, res)=>{
+    res.render("TransactionQueryByMPAY", {
     
     })
 })

@@ -15,7 +15,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
     target.disabled = true;
 
     var ajax = new XMLHttpRequest();
-    ajax.open("POST", "/api/CCProxySale", true);
+    ajax.open("POST", "/api/CCProxySale3D", true);
     ajax.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');  
     ajax.onload = function () {
         target.disabled = false
@@ -25,7 +25,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
 
     ajax.send(JSON.stringify({
         ServiceType: "CCProxy",
-        OperationType:"Sale",
+        OperationType:"Sale3DSEC",
         CreditCardInfoCreditCardNo:creditCardNo,
         CreditCardInfoOwnerName:ownerName,
         CreditCardInfoExpireYear:expireYear,
@@ -36,7 +36,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CardTokenizationCustomerId:"1",
         CardTokenizationValidityPeriod:0,
         MPAY:"", 
-        Port:"01",
+        Port:"001",
         IPAddress:"195.142.102.58",
         PaymentContent:"BLGSYR01",
         InstallmentCount:installmentCount,

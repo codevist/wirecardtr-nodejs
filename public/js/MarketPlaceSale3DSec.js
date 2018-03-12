@@ -32,6 +32,9 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CreditCardInfoExpireMonth:expireMonth,
         CreditCardInfoCvv:cvv,
         CreditCardInfoPrice:1,//0,01 TL
+        CardTokenizationRequestType:0,
+        CardTokenizationCustomerId:"1",
+        CardTokenizationValidityPeriod:0,
         Mpay:"",
         ExtraParam:"",
         Description:"Bilgisayar",

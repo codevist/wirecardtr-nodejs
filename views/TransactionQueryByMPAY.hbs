@@ -1,0 +1,27 @@
+
+    {{> head}}
+<h2> MPAY ile İşlem Sorgulama</h2>
+<div class="form-group">
+        <div class="row">
+
+            <label class="col-md-12 control-label" for="">Mpay</label>
+            <div class="col-md-3">
+                <input name="MPAY" value="001"  type="text" value="" class="form-control" required="">
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-md-12 control-label" for=""></label>
+            <div class="col-md-4">
+                <br />
+                <button type="submit" id="btnSubmit" name="" class="btn btn-danger">Sorgula</button>
+            </div>
+        </div>
+       
+    </div>
+    <pre id="result">
+
+          </pre>
+
+     <script src="/js/TransactionQueryByMPAY.js"></script>
+
+    {{> footer}}
